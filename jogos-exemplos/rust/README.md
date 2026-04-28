@@ -135,19 +135,19 @@ Se o seu Python estiver em um caminho diferente, edite `PYTHON_DIR` no `rodar.ba
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
 │  # # # # # # # # #                                                   │
-│  # . . . . . . . #   # = parede                                              │
-│  # . @ . . . . . #   . = chão revelado                                            │
-│  # . . . . s . . #   @ = você                                                │
-│  # # # # . # # # #   s = esqueleto (inimigo)                                           │
-│            .         > = escada (próximo andar)                                              │
-│  # # # # . # # # #   ! = item no chão                                                │
+│  # . . . . . . . #   # = parede                                      │
+│  # . @ . . . . . #   . = chão revelado                               │
+│  # . . . . s . . #   @ = você                                        │
+│  # # # # . # # # #   s = esqueleto (inimigo)                         │
+│            .         > = escada (próximo andar)                      │
+│  # # # # . # # # #   ! = item no chão                                │
 │  # . . > . . . . #                                                   │
 │  # # # # # # # # #                                                   │
 ├──────────────────────────────────────────────────────────────────────┤
-│  Andar:1 | Mortes:0 | ATK:5 DEF:2 | HP:30/30 | Inv: vazio                                               │
+│  Andar:1 | Mortes:0 | ATK:5 DEF:2 | HP:30/30 | Inv: vazio            │
 ├──────────────────────────────────────────────────────────────────────┤
-│  Você atacou Esqueleto por 4 de dano. HP restante: 8/12                                                  │
-│  Esqueleto te atacou por 3 de dano!                                               │
+│  Você atacou Esqueleto por 4 de dano. HP restante: 8/12              │
+│  Esqueleto te atacou por 3 de dano!                                  │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -224,115 +224,7 @@ Se o seu Python estiver em um caminho diferente, edite `PYTHON_DIR` no `rodar.ba
 
 ---
 
-## O que vamos mudar
 
-### 1. Sistema de câmera (PRIORIDADE ALTA)
-
-**Problema atual:** o mapa inteiro (80×40) é exibido de uma vez, mas o terminal pode ser menor que isso, cortando a borda. Além disso, o jogador pode estar em qualquer canto da tela — não há acompanhamento visual.
-
-**O que será implementado:**
-
-```
-ANTES (câmera fixa):          DEPOIS (câmera centrada):
-┌────────────────────┐        ┌────────────────────┐
-│                    │        │     (visível)      │
-│   @                │        │        @           │
-│                    │   ──►  │   (centrado)       │
-│                    │        │                    │
-└────────────────────┘        └────────────────────┘
-  mapa inteiro exibido          só a área ao redor
-```
-
-**Moldes de câmera planejados** (configurável em Python ou Rust):
-
-| Modo | Descrição | Uso |
-|------|-----------|-----|
-| `centered` | Câmera segue o jogador, sempre centralizada | Padrão |
-| `smooth` | Câmera desliza suavemente (interpolação) | Exploração |
-| `room-lock` | Câmera "trava" na sala atual e só muda ao sair | Estilo clássico |
-| `fixed` | Modo atual — mapa inteiro visível | Mapas pequenos |
-
-Arquivos afetados: `renderer.rs`, novo `camera.rs`
-
----
-
-### 2. Mais inimigos (`scripts/enemies.py`)
-
-Novos tipos planejados:
-
-| Símbolo | Nome | Andar | IA | Especial |
-|---------|------|-------|-----|---------|
-| `z` | Zumbi | 1+ | Lenta perseguição | — |
-| `b` | Morcego | 2+ | Randômico rápido | Move 2x por turno |
-| `t` | Troll | 3+ | Perseguição | Regenera HP |
-| `W` | Bruxa | 4+ | Alcance | Causa cegueira (reduz FOV) |
-| `D` | Dragão de Pedra | 5 | Boss secundário | Perseguição + knockback |
-
----
-
-### 3. Mais itens (`scripts/items.py`)
-
-Novos itens planejados:
-
-| Símbolo | Nome | Efeito |
-|---------|------|--------|
-| `*` | Pedra de Luz | Aumenta FOV para 12 tiles por 10 turnos |
-| `?` | Pergaminho de Teleporte | Teletransporta para sala aleatória |
-| `^` | Botas de Rapidez | Move 2 tiles por turno por 5 turnos |
-| `~` | Frasco de Ácido | Atira projétil: dano em linha reta |
-| `+` | Amuleto de Cura | Regenera 1 HP por turno por 8 turnos |
-
----
-
-### 4. Melhorias gerais planejadas
-
-- [ ] **Níveis de dificuldade** (easy/normal/hard) configuráveis em Python
-- [ ] **Sistema de experiência e level up** do jogador
-- [ ] **Armadilhas** no chão (espinhos, teleporte, fogo)
-- [ ] **Lojas** em salas especiais — troca itens por outros
-- [ ] **Miniboss** no andar 3
-- [ ] **Corredores secretos** conectando salas não adjacentes
-
----
-
-## Roadmap visual futuro
-
-O jogo atualmente usa caracteres ASCII puro. As opções de visual planejadas são:
-
-### Opção A — ASCII melhorado (curto prazo)
-Usar box-drawing characters e mais variação de símbolos:
-```
-╔═══╗  ░░░░░  Paredes com cantos
-║...║  ▒▒▒▒▒  Chão com textura
-╚═══╝  ▓▓▓▓▓  Escuridão revelada
-```
-
-### Opção B — Tiles coloridos por bioma (médio prazo)
-Cada andar tem um "tema" que muda as cores:
-- Andar 1-2: Pedra cinza (`#808080`)
-- Andar 3: Caverna de lava (`#FF4500`)
-- Andar 4: Gelo (`#ADD8E6`)
-- Andar 5: Templo dourado (`#FFD700`)
-
-### Opção C — Interface gráfica com `ratatui` (longo prazo)
-Substituir `crossterm` direto por [`ratatui`](https://ratatui.rs) — uma TUI framework que permite:
-- Widgets (barras de HP, painéis, listas)
-- Layout em colunas (mapa | painel lateral | log)
-- Mouse support
-- Animações simples
-
-```
-┌─ MAPA ──────────────────┬─ STATS ──────────┐
-│  # # # # # # #          │  Andar: 3         │
-│  # . . @ . . #          │  HP: ████░░ 18/30 │
-│  # . . . . . #          │  ATK: 12  DEF: 5  │
-│  # . . s . . #          ├─ INVENTÁRIO ──────┤
-│  # # # # # # #          │  [1] Poção P.     │
-├─ LOG ───────────────────┤  [2] Espada Curta │
-│  > Você matou Esqueleto │  [3] Antídoto     │
-│  > Você pegou: Poção    └──────────────────-┘
-└─────────────────────────┘
-```
 
 ---
 
