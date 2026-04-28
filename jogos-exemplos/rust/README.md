@@ -135,19 +135,19 @@ Se o seu Python estiver em um caminho diferente, edite `PYTHON_DIR` no `rodar.ba
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
 │  # # # # # # # # #                                                   │
-│  # . . . . . . . #   # = parede                                              │
-│  # . @ . . . . . #   . = chão revelado                                            │
-│  # . . . . s . . #   @ = você                                                │
-│  # # # # . # # # #   s = esqueleto (inimigo)                                           │
-│            .         > = escada (próximo andar)                                              │
-│  # # # # . # # # #   ! = item no chão                                                │
+│  # . . . . . . . #   # = parede                                      │
+│  # . @ . . . . . #   . = chão revelado                               │
+│  # . . . . s . . #   @ = você                                        │
+│  # # # # . # # # #   s = esqueleto (inimigo)                         │
+│            .         > = escada (próximo andar)                      │
+│  # # # # . # # # #   ! = item no chão                                │
 │  # . . > . . . . #                                                   │
 │  # # # # # # # # #                                                   │
 ├──────────────────────────────────────────────────────────────────────┤
-│  Andar:1 | Mortes:0 | ATK:5 DEF:2 | HP:30/30 | Inv: vazio                                               │
+│  Andar:1 | Mortes:0 | ATK:5 DEF:2 | HP:30/30 | Inv: vazio            │
 ├──────────────────────────────────────────────────────────────────────┤
-│  Você atacou Esqueleto por 4 de dano. HP restante: 8/12                                                  │
-│  Esqueleto te atacou por 3 de dano!                                               │
+│  Você atacou Esqueleto por 4 de dano. HP restante: 8/12              │
+│  Esqueleto te atacou por 3 de dano!                                  │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
