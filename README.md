@@ -296,8 +296,8 @@ Procuramos por:
 
 ## Links Importantes
 
-- **GitHub**: https://github.com/Taino-Edu/mindpunk
-- **LinkedIn**: https://linkedin.com/in/taino-edu
+- **GitHub**: https://github.com/Taino-Edu/
+- **LinkedIn**: https://linkedin.com/in/edu-taino
 - **Email**: esusxd0@gmail.com
 - **Website**: https://mindpunk.dev (coming soon)
 
