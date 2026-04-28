@@ -1,0 +1,27 @@
+[package]
+name = "dungeon_crawler"
+version = "0.1.0"
+edition = "2021"
+
+# ─────────────────────────────────────────────
+# DEPENDÊNCIAS
+# ─────────────────────────────────────────────
+
+[dependencies]
+# pyo3: permite chamar código Python diretamente do Rust.
+# "auto-initialize" faz o Rust iniciar o interpretador Python automaticamente.
+# abi3 = usa a API estável do Python (compatível com 3.12+, incluindo 3.14)
+# auto-initialize = Rust inicializa o interpretador Python automaticamente
+pyo3 = { version = "0.23", features = ["auto-initialize", "abi3", "abi3-py312"] }
+
+# crossterm: biblioteca cross-platform para controlar o terminal
+# (mover cursor, limpar tela, ler teclas pressionadas sem precisar de Enter).
+crossterm = "0.27"
+
+# rand: gerador de números aleatórios — usado na geração de mapas e loot.
+rand = "0.8"
+
+# serde + serde_json: serialização. Usado para passar dados entre Python e Rust
+# em formato JSON quando necessário.
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

@@ -1,0 +1,20 @@
+# =========================
+# Mindpunk Game Dev Starter Kit - .gitignore
+# =========================
+
+# Rust
+**/target/
+**/*.rs.bk
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+
+# Node / JS / Angular / Express
+**/node_modules/
+**/dist/
+**/build/
+**/.angular/
+
+# SO / Editores 
+.vscode/

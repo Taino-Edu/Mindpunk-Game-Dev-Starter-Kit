@@ -1,0 +1,12 @@
+# Rust build artifacts
+target/
+
+# Arquivos gerados pelo Cargo
+Cargo.lock
+
+# Bytecode Python
+scripts/__pycache__/
+**/*.pyc
+
+# Variáveis de ambiente locais (se criadas)
+.env
