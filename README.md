@@ -2,7 +2,7 @@
   <img src="assets/logos/mindpunk-logo.png" alt="MINDPUNK" width="250">
 </p>
 
-<h1 align="center">⚡ MINDPUNK LAB ⚡</h1>
+<h1 align="center">MINDPUNK LAB</h1>
 <p align="center">
   <b>"Onde o código encontra a criação. Onde a lógica encontra o jogo."</b>
 </p>
@@ -16,7 +16,7 @@
 
 ---
 
-## 🧠 Quem Somos & Nosso Propósito
+## Quem Somos & Nosso Propósito
 
 O **Mindpunk Lab** não é apenas um repositório de código; é um laboratório de engenharia focado em democratizar o desenvolvimento de jogos de alta complexidade. Nossa missão é transformar entusiastas em engenheiros, ensinando não apenas como "fazer o código rodar", mas como arquitetar sistemas que escalam, performam e divertem.
 
@@ -24,7 +24,7 @@ O **Mindpunk Lab** não é apenas um repositório de código; é um laboratório
 
 ---
 
-## 🏛️ Agradecimento Especial: UNIP
+## Agradecimento Especial: UNIP
 
 Este Starter Kit e os workshops associados não seriam possíveis sem o apoio institucional da **UNIP (Universidade Paulista)**. 
 
@@ -32,34 +32,44 @@ Agradecemos aos coordenadores, professores e alunos da UNIP pelo espaço de expe
 
 ---
 
-## 🗺️ A Jornada do Desenvolvedor (Roadmap)
+## 🎮 Game Portal (Início Rápido)
+
+Para facilitar a experiência, criamos um **Portal de Jogos** centralizado. Você pode rodar todos os jogos do kit a partir de um único comando:
+
+```bash
+python portal.py
+```
+
+---
+
+## A Jornada do Desenvolvedor (Roadmap)
 
 Escolha o seu ponto de entrada e suba de nível na nossa trilha educacional:
 
 | Nível | Projeto | Foco Técnico | Dificuldade |
 | :--- | :--- | :--- | :--- |
-| **01** | [Deep Sea Coder 🌊](./jogos-exemplos/terminal/workshop-deep-sea-coder/) | Lógica Pura & Algoritmos (Python) | ⭐ |
-| **02** | [Fragmento 01 🧱](./jogos-exemplos/mindpunk-fragment-01/) | State Management & Web Loops (React) | ⭐⭐ |
-| **03** | [Game-UW ⚔️](./jogos-exemplos/express/Game-UW/) | Game Theory & Hex Grids (Phaser 3) | ⭐⭐⭐ |
-| **04** | [Dungeon Crawler 🦀](./jogos-exemplos/rust/) | Performance & FFI (Rust + Python) | ⭐⭐⭐⭐ |
+| **01** | [Deep Sea Coder](./jogos-exemplos/terminal/workshop-deep-sea-coder/) | Lógica Pura & Algoritmos (Python) | Básico |
+| **02** | [Fragmento 01](./jogos-exemplos/mindpunk-fragment-01/) | State Management & Web Loops (React) | Intermediário |
+| **03** | [Game-UW](./jogos-exemplos/express/Game-UW/) | Game Theory & Hex Grids (Phaser 3) | Avançado |
+| **04** | [Dungeon Crawler](./jogos-exemplos/rust/) | Performance & FFI (Rust + Python) | Especialista |
 
 ---
 
-## 🤝 Como Contribuir (The "Mãozinha" Guide)
+## Como Contribuir (Guia de Colaboração)
 
 Quer deixar sua marca no Mindpunk Lab? Adoramos novas ideias! Siga o guia abaixo:
 
-*   **👋 Boas-vindas:** Se você é novo, comece lendo nossos `SRC_COMENTADO` para entender nosso estilo.
-*   **💡 Sugestões:** Tem uma ideia de mecânica? Abra uma [Issue](https://github.com/Taino-Edu/Mindpunk-Game-Dev-Starter-Kit/issues).
-*   **🛠️ Mão na Massa:**
-    1.  Faça um **Fork** do projeto.
-    2.  Crie sua **Branch** (`git checkout -b feature/minha-ideia`).
-    3.  Faça o **Push** e abra um **Pull Request**.
-*   **🚀 Desafios Sênior:** Tente resolver um dos desafios nível 3 em qualquer jogo e envie seu código!
+*   **Boas-vindas:** Se você é novo, comece lendo nossos `SRC_COMENTADO` para entender nosso estilo.
+*   **Sugestões:** Tem uma ideia de mecânica? Abra uma Issue no GitHub.
+*   **Mão na Massa:**
+    1.  Faça um Fork do projeto.
+    2.  Crie sua Branch (`git checkout -b feature/minha-ideia`).
+    3.  Faça o Push e abra um Pull Request.
+*   **Desafios Sênior:** Tente resolver um dos desafios nível 3 em qualquer jogo e envie seu código!
 
 ---
 
-## 🛡️ Visão Profissional & Arquitetura
+## Visão Profissional & Arquitetura
 
 Para recrutadores e engenheiros sêniores, este kit demonstra domínio em:
 - **Interoperabilidade:** Integração Rust/Python via FFI.
@@ -69,7 +79,7 @@ Para recrutadores e engenheiros sêniores, este kit demonstra domínio em:
 
 ---
 
-## 🔗 Conecte-se Conosco
+## Conecte-se Conosco
 
 <div align="center">
 
@@ -81,6 +91,5 @@ Para recrutadores e engenheiros sêniores, este kit demonstra domínio em:
 
 ---
 
-**Criado com 💜 por Taino-Edu.**  
+**Criado com carinho por Taino-Edu.**  
 *Mindpunk Lab - Onde o código encontra a criação.*
-</div>
