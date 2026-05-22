@@ -16,6 +16,16 @@
 
 ---
 
+<p align="center">
+  <a href="#quem-somos--nosso-propósito">Propósito</a> •
+  <a href="#-game-portal-início-rápido">Game Portal</a> •
+  <a href="#a-jornada-do-desenvolvedor-roadmap">Roadmap</a> •
+  <a href="#-visão-profissional--arquitetura">Arquitetura</a> •
+  <a href="#como-contribuir-guia-de-colaboração">Contribuir</a>
+</p>
+
+---
+
 ## Quem Somos & Nosso Propósito
 
 O **Mindpunk Lab** não é apenas um repositório de código; é um laboratório de engenharia focado em democratizar o desenvolvimento de jogos de alta complexidade. Nossa missão é transformar entusiastas em engenheiros, ensinando não apenas como "fazer o código rodar", mas como arquitetar sistemas que escalam, performam e divertem.
@@ -34,7 +44,7 @@ Agradecemos aos coordenadores, professores e alunos da UNIP pelo espaço de expe
 
 ## 🎮 Game Portal (Início Rápido)
 
-Para facilitar a experiência, criamos um **Portal de Jogos** centralizado. Você pode rodar todos os jogos do kit a partir de um único comando:
+O Mindpunk Lab possui um lançador centralizado. Para iniciar qualquer jogo, basta rodar o comando abaixo na raiz do projeto ou clicar no arquivo `start.bat`:
 
 ```bash
 python portal.py
@@ -55,6 +65,33 @@ Escolha o seu ponto de entrada e suba de nível na nossa trilha educacional:
 
 ---
 
+## 🏛️ Visão Profissional & Arquitetura
+
+Abaixo, o mapeamento técnico de como o laboratório está estruturado:
+
+```mermaid
+graph TD
+    A[Mindpunk Game Portal] -->|Inicia| B(Deep Sea Coder - Python)
+    A -->|Inicia| C(Fragmento 01 - React/TS)
+    A -->|Inicia| D(Game-UW - Phaser/Electron)
+    A -->|Inicia| E(Dungeon Crawler - Rust/Python)
+
+    subgraph "Engines & Patterns"
+    B -.-> B1[Logic & CLI]
+    C -.-> C1[Zustand State Management]
+    D -.-> D1[Hexagonal Grids & AI]
+    E -.-> E1[FFI Integration & BSP]
+    end
+```
+
+Este Starter Kit demonstra domínio em:
+- **Interoperabilidade:** Integração Rust/Python via FFI.
+- **Sistemas Procedurais:** Geração de mapas via algoritmos BSP.
+- **Arquitetura Web:** Hooks customizados e gerenciamento de estado atômico.
+- **Documentação:** Estrutura de GDD e roteiros pedagógicos de alto nível.
+
+---
+
 ## Como Contribuir (Guia de Colaboração)
 
 Quer deixar sua marca no Mindpunk Lab? Adoramos novas ideias! Siga o guia abaixo:
@@ -66,16 +103,6 @@ Quer deixar sua marca no Mindpunk Lab? Adoramos novas ideias! Siga o guia abaixo
     2.  Crie sua Branch (`git checkout -b feature/minha-ideia`).
     3.  Faça o Push e abra um Pull Request.
 *   **Desafios Sênior:** Tente resolver um dos desafios nível 3 em qualquer jogo e envie seu código!
-
----
-
-## Visão Profissional & Arquitetura
-
-Para recrutadores e engenheiros sêniores, este kit demonstra domínio em:
-- **Interoperabilidade:** Integração Rust/Python via FFI.
-- **Sistemas Procedurais:** Geração de mapas via algoritmos BSP.
-- **Arquitetura Web:** Hooks customizados e gerenciamento de estado atômico.
-- **Documentação:** Estrutura de GDD e roteiros pedagógicos de alto nível.
 
 ---
 
