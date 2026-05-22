@@ -1,13 +1,18 @@
-<div align="center">
-<img src="assets/logos/mindpunk-logo.png" alt="MINDPUNK" width="250" style="margin-bottom: 20px;">
+<p align="center">
+  <img src="assets/logos/mindpunk-logo.png" alt="MINDPUNK" width="250">
+</p>
 
-# ⚡ MINDPUNK LAB ⚡
-### "Onde o código encontra a criação. Onde a lógica encontra o jogo."
+<h1 align="center">⚡ MINDPUNK LAB ⚡</h1>
+<p align="center">
+  <b>"Onde o código encontra a criação. Onde a lógica encontra o jogo."</b>
+</p>
 
-[![License MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Rust](https://img.shields.io/badge/Rust-CE422B?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License MIT">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Rust-CE422B?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+</p>
 
 ---
 
