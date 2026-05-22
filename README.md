@@ -1,78 +1,81 @@
 <div align="center">
-<img src="assets/logos/mindpunk-logo.png" alt="MINDPUNK" width="200" style="margin-bottom: 20px;">
+<img src="assets/logos/mindpunk-logo.png" alt="MINDPUNK" width="250" style="margin-bottom: 20px;">
 
-# MINDPUNK - Game Dev Starter Kit
-### "Toda decisão cria. Toda criação custa."
+# ⚡ MINDPUNK LAB ⚡
+### "Onde o código encontra a criação. Onde a lógica encontra o jogo."
+
+[![License MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Rust](https://img.shields.io/badge/Rust-CE422B?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+
+---
+
+## 🧠 Quem Somos & Nosso Propósito
+
+O **Mindpunk Lab** não é apenas um repositório de código; é um laboratório de engenharia focado em democratizar o desenvolvimento de jogos de alta complexidade. Nossa missão é transformar entusiastas em engenheiros, ensinando não apenas como "fazer o código rodar", mas como arquitetar sistemas que escalam, performam e divertem.
+
+**"Toda decisão cria. Toda criação custa."** – Este é o nosso mantra. No desenvolvimento de jogos, cada linha de código é um trade-off entre performance e experiência. Aqui, ensinamos você a dominar esses custos.
+
+---
+
+## 🏛️ Agradecimento Especial: UNIP
+
+Este Starter Kit e os workshops associados não seriam possíveis sem o apoio institucional da **UNIP (Universidade Paulista)**. 
+
+Agradecemos aos coordenadores, professores e alunos da UNIP pelo espaço de experimentação e por acreditarem no potencial da educação técnica através da criação de jogos. Este repositório é fruto dessa colaboração entre a academia e a prática do mercado.
+
+---
+
+## 🗺️ A Jornada do Desenvolvedor (Roadmap)
+
+Escolha o seu ponto de entrada e suba de nível na nossa trilha educacional:
+
+| Nível | Projeto | Foco Técnico | Dificuldade |
+| :--- | :--- | :--- | :--- |
+| **01** | [Deep Sea Coder 🌊](./jogos-exemplos/terminal/workshop-deep-sea-coder/) | Lógica Pura & Algoritmos (Python) | ⭐ |
+| **02** | [Fragmento 01 🧱](./jogos-exemplos/mindpunk-fragment-01/) | State Management & Web Loops (React) | ⭐⭐ |
+| **03** | [Game-UW ⚔️](./jogos-exemplos/express/Game-UW/) | Game Theory & Hex Grids (Phaser 3) | ⭐⭐⭐ |
+| **04** | [Dungeon Crawler 🦀](./jogos-exemplos/rust/) | Performance & FFI (Rust + Python) | ⭐⭐⭐⭐ |
+
+---
+
+## 🤝 Como Contribuir (The "Mãozinha" Guide)
+
+Quer deixar sua marca no Mindpunk Lab? Adoramos novas ideias! Siga o guia abaixo:
+
+*   **👋 Boas-vindas:** Se você é novo, comece lendo nossos `SRC_COMENTADO` para entender nosso estilo.
+*   **💡 Sugestões:** Tem uma ideia de mecânica? Abra uma [Issue](https://github.com/Taino-Edu/Mindpunk-Game-Dev-Starter-Kit/issues).
+*   **🛠️ Mão na Massa:**
+    1.  Faça um **Fork** do projeto.
+    2.  Crie sua **Branch** (`git checkout -b feature/minha-ideia`).
+    3.  Faça o **Push** e abra um **Pull Request**.
+*   **🚀 Desafios Sênior:** Tente resolver um dos desafios nível 3 em qualquer jogo e envie seu código!
+
+---
+
+## 🛡️ Visão Profissional & Arquitetura
+
+Para recrutadores e engenheiros sêniores, este kit demonstra domínio em:
+- **Interoperabilidade:** Integração Rust/Python via FFI.
+- **Sistemas Procedurais:** Geração de mapas via algoritmos BSP.
+- **Arquitetura Web:** Hooks customizados e gerenciamento de estado atômico.
+- **Documentação:** Estrutura de GDD e roteiros pedagógicos de alto nível.
+
+---
+
+## 🔗 Conecte-se Conosco
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/edu-taino)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Taino-Edu)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF4B4B?style=for-the-badge&logo=codepen&logoColor=white)](https://mindpunk.dev)
+
 </div>
-
----
-
-## 🗺️ A Jornada do Desenvolvedor
-
-Este kit não é apenas uma coleção de jogos, é uma trilha de aprendizado estruturada para transformar curiosidade em engenharia.
-
-### 🛤️ Nível 1: A Lógica (Python)
-**[Deep Sea Coder](./jogos-exemplos/terminal/workshop-deep-sea-coder/)**  
-Aprenda o básico de algoritmos, loops e como o computador processa comandos. Sem gráficos pesados, apenas você e a lógica.
-
-### 🛤️ Nível 2: O Estado (React + TypeScript)
-**[Fragmento 01](./jogos-exemplos/mindpunk-fragment-01/)**  
-Suba para a Web e entenda como gerenciar estados complexos em tempo real e como renderizar um mundo dinâmico a 60 FPS.
-
-### 🛤️ Nível 3: A Estratégia (Phaser 3)
-**[Game-UW](./jogos-exemplos/express/Game-UW/)**  
-Explore motores de jogos profissionais. Aprenda Teoria dos Jogos, grids hexagonais e Inteligência Artificial baseada em mapas de ameaça.
-
-### 🛤️ Nível 4: A Performance (Rust)
-**[Dungeon Crawler](./jogos-exemplos/rust/)**  
-O ápice técnico. Integre linguagens de baixo nível (Rust) com alto nível (Python). Aprenda Shadowcasting, geração procedural avançada e FFI.
-
----
-
-## 🛠️ Ferramentas de Suporte
-
-- **[Check de Ambiente](./check_env.py):** Execute este script para garantir que seu PC está pronto para todos os níveis.
-- **[Material de Workshop](./workshop-material/):** Slides, roteiros e guias para quem quer ensinar ou palestrar usando este kit.
-- **[Desafios Sênior]:** Cada jogo possui um arquivo de exercícios nível 3 para quem quer testar limites profissionais.
-
----
-
-## 🏛️ Visão Profissional & Arquitetura
-
-Este Starter Kit foi projetado seguindo princípios modernos de engenharia de software para demonstrar versatilidade técnica:
-
-- **Abstração de Estado:** Implementação de padrões como *State Machines* e *Centralized Stores* (Zustand/Rust Structs).
-- **Interoperabilidade (FFI):** Demonstração prática de como integrar linguagens de baixo nível para performance crítica.
-- **Game Design Educacional:** Balanceamento baseado em Teoria dos Jogos (Equilíbrio de Nash) e Geração Procedural (BSP).
-- **Padrões de Interface:** Separação clara entre Lógica de Negócio (Engine) e Renderização (View).
-
----
-
-## 🤝 Contribuindo
-
-Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
-
-1. Faça um **Fork** do projeto.
-2. Crie uma **Branch** para sua feature (`git checkout -b feature/NovaFeature`).
-3. Faça o **Commit** de suas alterações (`git commit -m 'Add: Nova funcionalidade incrível'`).
-4. Faça o **Push** para a Branch (`git push origin feature/NovaFeature`).
-5. Abra um **Pull Request**.
-
-### O que buscamos:
-- Novos jogos educacionais (em qualquer linguagem).
-- Melhorias na documentação e SRC_COMENTADO.
-- Novos exercícios e desafios práticos.
-
----
-
-## 🔗 Links & Contato
-
-- **GitHub**: [Taino-Edu](https://github.com/Taino-Edu/)
-- **LinkedIn**: [Edu Taino](https://linkedin.com/in/edu-taino)
-- **Email**: esusxd0@gmail.com
-- **Website**: [mindpunk.dev](https://mindpunk.dev) (Coming Soon)
 
 ---
 
 **Criado com 💜 por Taino-Edu.**  
 *Mindpunk Lab - Onde o código encontra a criação.*
+</div>
